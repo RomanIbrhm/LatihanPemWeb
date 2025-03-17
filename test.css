@@ -1,240 +1,289 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #9288f8;
+  background-color: #9288f8;
 }
 
 #container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    padding: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 20px;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 #navigasiWeb {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
 }
 
 #navigasiUtama {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 
 .tombolNavigasi a {
-    text-decoration: none;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 20px;
-    transition: background-color 0.3s;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background-color 0.3s;
 }
 
 .tombolNavigasi a:hover {
-    background-color: #9288f8;
-    color: white;
+  background-color: #9288f8;
+  color: white;
 }
 
 .tombolNavigasi a:active {
-    background-color: #7a70e0;
-    color: white;
-    transform: scale(0.95);
+  background-color: #7a70e0;
+  color: white;
+  transform: scale(0.95);
 }
 
 #headerTitle h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
+  font-size: 50px;
+  margin-bottom: 10px;
 }
 
 #subtitle {
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #9288f8;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #9288f8;
+  color: white;
+  padding: 10px;
+  border-radius: 30px;
+  display: inline-block;
 }
 
 main {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #form {
-    max-width: 600px;
-    margin: auto;
+  max-width: 600px;
+  margin: auto;
 }
 
 .input-control {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .input-control label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
-.input-control input, .input-control textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+.input-control input,
+.input-control textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 #buttonSubmitReview {
-    border: whitesmoke;
-    border-radius: 15px;
-    outline: none;
-    padding: 15px 62px;
-    background: #322653;
-    color: white;
-    overflow: hidden;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
+  margin-top: 15px;
+  border: whitesmoke;
+  border-radius: 15px;
+  outline: none;
+  padding: 15px 62px;
+  background: #322653;
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
 }
 
-
 #buttonSubmitReview::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 120%;
-    height: 170%;
-    background: #9288f8;
-    z-index: 1;
-    transform-origin: left;
-    transform: skew(45deg) translateX(-90%) translateY(40%);
-    transition: all .5s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120%;
+  height: 170%;
+  background: #9288f8;
+  z-index: 1;
+  transform-origin: left;
+  transform: skew(45deg) translateX(-90%) translateY(40%);
+  transition: all 0.5s ease-in-out;
 }
 
 #buttonSubmitReview span {
-    position: relative;
-    z-index: 2;
-    font-family: inherit;
+  position: relative;
+  z-index: 2;
+  font-family: inherit;
 }
 
 #buttonSubmitReview:hover::after {
-    transform: skew(-40deg) translateX(10%) translateY(0%);
+  transform: skew(-40deg) translateX(10%) translateY(0%);
 }
 
-.sesiCallCenter{
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: #7a70e0;
-    border-radius: 50px;
-    padding: 15px;
+.sesiCallCenter {
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #7a70e0;
+  border-radius: 50px;
+  padding: 15px 15px 0 15px;
 }
 
-.tombolKolSenter{
-    padding-top: 5px;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+.tombolKolSenter {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #buttonCallCenter {
-    border: whitesmoke;
-    border-radius: 15px;
-    outline: none;
-    padding: 15px 62px;
-    background: #322653;
-    color: white;
-    overflow: hidden;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    position: relative;
-    text-align: center;
+  margin-top: 25px;
+  margin-bottom: 0;
+  border: whitesmoke;
+  border-radius: 15px;
+  outline: none;
+  padding: 15px 62px;
+  background: #322653;
+  color: white;
+  overflow: hidden;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
 }
 
 #buttonCallCenter::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 120%;
-    height: 170%;
-    background: #9288f8;
-    z-index: 1;
-    transform-origin: left;
-    transform: skew(45deg) translateX(-90%) translateY(40%);
-    transition: all .5s ease-in-out;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 120%;
+  height: 170%;
+  background: #9288f8;
+  z-index: 1;
+  transform-origin: left;
+  transform: skew(45deg) translateX(-90%) translateY(40%);
+  transition: all 0.5s ease-in-out;
 }
 
 #buttonCallCenter span {
-    position: relative;
-    z-index: 2;
-    font-family: inherit;
+  position: relative;
+  z-index: 2;
+  font-family: inherit;
 }
 
 #buttonCallCenter:hover::after {
-    transform: skew(-40deg) translateX(10%) translateY(0%);
+  transform: skew(-40deg) translateX(10%) translateY(0%);
 }
 
 #gallery .gallery-images {
-    display: flex;
-    gap: 10px;
-    margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 #gallery .gallery-images img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
 }
 
 #testimonials .testimonial {
-    background-color: #f1f1f1;
-    padding: 15px;
-    border-radius: 10px;
-    margin-top: 15px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
 footer {
-    text-align: center;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #f1f1f1;
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f1f1f1;
 }
 
 .social-media {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .social-media a {
-    margin: 0 10px;
-    color: #9288f8;
-    font-size: 20px;
+  margin: 0 10px;
+  color: #9288f8;
+  font-size: 20px;
 }
 
 .social-media a:hover {
-    color: #7a70e0;
+  color: #7a70e0;
+}
+
+.slider-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 15px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
